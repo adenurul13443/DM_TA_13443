@@ -39,7 +39,7 @@ ax.set_xlabel('cluster')
 ax.set_ylabel('inertia')
 
 #panah elbow
-ax.annotate('Possible elbow point', xy=(2, 1900000), xytext=(2, 150000), xycoords='data',
+ax.annotate('Possible elbow point', xy=(2, 1900000), xytext=(2, 50000), xycoords='data',
             arrowprops=dict(arrowstyle='->', connectionstyle='arc3', color='blue', lw=2))
 
 ax.annotate('Possible elbow point', xy=(3, 80000), xytext=(2, 2500000), xycoords='data',
