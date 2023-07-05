@@ -22,7 +22,7 @@ X = df.drop(['CustomerID', 'Gender'], axis=1)
 
 print(X)
 
-st.header("isi dataset")
+st.header("Isi Dataset")
 st.write(X)
 
 #menampilkan elbow
@@ -50,7 +50,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 elbo_plot = st.pyplot()
 
 #membuat side bar untuk menentukan nilai k klastering
-st.sidebar.subheader('Nilai jumlah k')
+st.sidebar.subheader('Menentukan Nilai k')
 clust = st.sidebar.slider("Pilih Jumlah Klaster (k) : ", 2,10,3,1)
 
 #fungsi menentukan nilai k klastering
@@ -74,6 +74,8 @@ def k_means(n_clust):
 #menampilkan di streamlit
     st.header('Cluster Plot')
     st.pyplot()
+
+    st.header("Hasil Klastering")
     st.write(X)
 
 #yg diambil dari slider
