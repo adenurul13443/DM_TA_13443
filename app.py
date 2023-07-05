@@ -9,7 +9,7 @@ import seaborn as sns
 
 
 
-st.title("Webb Apps Untuk Klastering dengan K-Means\n")
+st.title("Web Klasterisasi Pengunjung Mall\nKlastering dengan K-Means\n")
 
 df = pd.read_csv('data-mall.csv')
 
